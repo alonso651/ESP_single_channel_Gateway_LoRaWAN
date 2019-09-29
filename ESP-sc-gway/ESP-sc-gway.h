@@ -87,7 +87,7 @@
 //	4: ESP32 TTGO pinning (should work for 433 and OLED too).
 //	5: ESP32 TTGO EU433 MHz with OLED
 //	6: Other, define your own in loraModem.h
-#define _PIN_OUT 2
+#define _PIN_OUT 4
 
 // Gather statistics on sensor and Wifi status
 // 0= No statistics
@@ -135,7 +135,7 @@
 // OLED==0; No OLED display connected
 // OLED==1; 0.9 Oled Screen based on SSD1306
 // OLED==2;	1"3 Oled screens for Wemos, 128x64 SH1106
-#define OLED 0
+#define OLED 1
 
 
 // Define whether we want to manage the gateway over UDP (next to management 
@@ -176,7 +176,7 @@
 // MQTT definitions, these settings should be standard for TTN
 // and need not changing
 #define _TTNPORT 1700						// Standard port for TTN
-#define _TTNSERVER "router.eu.thethings.network"
+#define _TTNSERVER "thethings.meshed.com.au"
 
 // If you have a second back-end server defined such as Semtech or loriot.io
 // your can define _THINGPORT and _THINGSERVER with your own value.
@@ -195,9 +195,9 @@
 #define _DESCRIPTION "ESP Gateway"			// Name of the gateway
 #define _EMAIL "alonso.651@gmail.com"		// Owner
 #define _PLATFORM "ESP8266"
-#define _LAT -27.460222
-#define _LON -58.821659
-#define _ALT 1								// Altitude
+#define _LAT -27.480431
+#define _LON -58.801555
+#define _ALT 5								// Altitude
 
 // ntp
 // Please add daylight saving time to NTP_TIMEZONES when desired
